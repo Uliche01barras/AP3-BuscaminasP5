@@ -21,7 +21,6 @@ function setup()
 {
   createCanvas(500, 500);   //crea un lienzo o panel donde estará el juego. El primer parámetro es el ancho y el segundo el alto del lienzo.
   laMagiaDeLosProfes();
-
   //Asigno colores que se utilizarán. La fn color solo está definida para el setup y el draw
   COLOR_CASILLERO_CON_MINA = color("#FF0000");
   COLOR_CASILLERO_SIN_MINA = color("#1CC932");
@@ -32,10 +31,12 @@ function setup()
 
 
 function draw() {
+ponerMinasTablero();
 
   if (hizoClick == true){
     if (mouseButton == LEFT){
       if (tieneMinaCasillero(columnaPresionada, filaPresionada)){
+        mostrarMinas();
         perder();
       }else{
         pintarCasillero(columnaPresionada, filaPresionada, COLOR_CASILLERO_SIN_MINA);
@@ -53,12 +54,13 @@ function ganoElJuego()
 
 function ponerMinasTablero()
 {
-  // Modificar/completar
+  ponerMinaCasillero(4, 5);
 }
 
 function mostrarMinas()
 {
-  // Modificar/completar
+  pintarCasillero(columnaPresionada, filaPresionada, COLOR_CASILLERO_CON_MINA);
+  perder();
 }
 
 function contarMinasAlrededor(columna, fila)
