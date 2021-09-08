@@ -1,5 +1,5 @@
 # TP - Busca Minas
-Ulises Tejerina, Gustavo Fonceca,
+Ulises Tejerina, Gustavo Fonceca, Luciano Miranda
 ## Introducción
 En este trabajo estaremos programando un juego similar al clásico Buscaminas (si no lo conocés podés probarlo [acá http://buscaminas.eu/](http://buscaminas.eu/) ). 
 
