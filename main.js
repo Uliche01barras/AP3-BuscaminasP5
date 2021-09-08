@@ -32,26 +32,13 @@ function setup()
 
 
 function draw() {
-<<<<<<< Updated upstream
-  if (hizoClick == true)
-  {
-    if (mouseButton == LEFT) {
-      if (tieneMinaCasillero(columnaPrecionada, filaPrecionada)) {
-        perder();
-      }
-    }
-    pintarCasillero(columnaPresionada, filaPresionada, COLOR_CASILLERO_SIN_MINA); //pinta el casillero clickeado. Modificar/completar
 
-
-    
-=======
   if (hizoClick == true){
     if (mouseButton == LEFT){
       if (tieneMinaCasillero(columnaPresionada, filaPresionada)){
         perder();
       }
     }
->>>>>>> Stashed changes
     hizoClick = false;  //Indico que ya "procesé" el click del usuario. NO modificar
   }
 }
