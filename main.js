@@ -32,6 +32,7 @@ function setup()
 
 
 function draw() {
+<<<<<<< Updated upstream
   if (hizoClick == true)
   {
     if (mouseButton == LEFT) {
@@ -43,6 +44,14 @@ function draw() {
 
 
     
+=======
+  if (hizoClick == true){
+    if (mouseButton == LEFT){
+      if (tieneMinaCasillero(columnaPresionada, filaPresionada)){
+        perder();
+      }
+    }
+>>>>>>> Stashed changes
     hizoClick = false;  //Indico que ya "procesé" el click del usuario. NO modificar
   }
 }
