@@ -1,5 +1,5 @@
 //Constantes del juego
-const COLUMNAS = 10;
+const COLUMNAS = 10
 const FILAS = 10;
 const CANTIDAD_MINAS = 10;
 
